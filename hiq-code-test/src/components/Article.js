@@ -10,7 +10,7 @@ const Article = ({ article }) => {
 
     const [clickedPost, setClickedPost] = useState(null);
 
-    const { thumbnail, created, num_comments, author, score, permalink, title } = article.data; //Också: created, num_comments
+    const { thumbnail, created, num_comments, author, score, permalink, title } = article.data;
 
     const date = convertTime(created);
 

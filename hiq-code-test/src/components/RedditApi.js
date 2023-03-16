@@ -40,7 +40,6 @@ function RedditApi() {
         setPageNumber(pageNumber + 1);
 
         let url = `https://www.reddit.com/r/${category}.json?limit=${limit}&count=${pageNumber * limit}&after=${after}`;
-        //Count specifies the number of listings already seen
 
         handleAPICall(url);
     }
