@@ -37,7 +37,7 @@ describe('ArticleList component', () => {
 
     const { getByTestId } = render(<RedditApi />);
     const articleList = screen.getByTestId('article-list');
-  
+
     await waitFor(() => expect(articleList.children.length).toBe(2));
 
     global.fetch.mockRestore();
